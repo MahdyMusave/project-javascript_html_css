@@ -6,3 +6,31 @@
 body{
   background-color: #ddd;
 }
+.navbar{
+  width: 60%;
+  border: none;
+  text-decoration: none;
+  margin: auto;
+  background-color: #555;
+  /* overflow: auto; */
+  overflow: auto;
+
+
+}
+.navbar a{
+  /* display: inline-block; */
+  float:left;
+  text-align: center;
+  width: 19%;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  transition: all 0.90s ease;
+}
+.navbar a:hover{
+  background-color: #000;
+}
+.navbar a:active{
+  background-color: #04aa6d;
+}
