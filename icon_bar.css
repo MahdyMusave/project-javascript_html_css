@@ -7,22 +7,21 @@ body{
   background-color: #ddd;
 }
 .navbar{
-  width: 60%;
+  width: 90px;
   border: none;
   text-decoration: none;
   margin: auto;
   background-color: #555;
-  /* overflow: auto; */
-  overflow: auto;
+
 
 
 }
 .navbar a{
-  /* display: inline-block; */
-  float:left;
+  /* float:left; */
+  display: block;
   text-align: center;
-  width: 19%;
-  padding: 15px;
+  
+  padding: 16px;
   text-decoration: none;
   font-size: 36px;
   color: #fff;
