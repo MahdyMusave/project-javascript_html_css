@@ -1,42 +1,18 @@
-// const tabs = document.querySelector(".tab");
-// Array.from(tabs.children).forEach((tab) => {
-//   tab.addEventListener("click", (e) => {
-//     //   // console.log(e.target);
-//     let tabId = tab.getAttribute("data-tab");
-//     //   tabs.addEventListener((tab) => {
-//     //     tab.classList.remove("active");
-//     //   });
-//     //   tabs.addEventListener((tab) => {
-//     //     tab.classList.remove("show");
-//     //   });
-
-//     // console.log(tab);
-//     // console.log(tabId);
-//     // tab.classList.add("active");
-//     tab.getAttribute("data-tab").classList.add("show");
-//   });
-// });
-// // tab.addEventListener("click", (e) => {
-
-// // })
-
-const tabs = document.querySelectorAll(".tabs");
-const tabcontent = document.querySelectorAll(".tabcontent");
-
-tabs.forEach((tab) => {
-  tab.addEventListener("click", (e) => {
-    const tabId = e.target.getAttribute("data-tab");
-
-    tabs.forEach((tab) => {
-      tab.classList.remove("active");
+const tab = document.querySelector(".tab");
+const content = document.querySelectorAll(".tabcontent");
+Array.from(tab.children).forEach((item) => {
+  item.addEventListener("click", (e) => {
+    // console.log(item);
+    tabId = item.getAttribute("data-tab");
+    // console.log(tabId);
+    Array.from(tab.children).forEach((tabs) => {
+      tabs.classList.remove("active");
+    });
+    content.forEach((contentTb) => {
+      contentTb.classList.remove("show");
     });
 
-    tabcontent.forEach((content) => {
-      content.classList.remove("show");
-    });
-
-    e.target.classList.add("active");
-    // console.log(document.getElementById(tabId));
+    item.classList.add("active");
     document.getElementById(tabId).classList.add("show");
   });
 });
