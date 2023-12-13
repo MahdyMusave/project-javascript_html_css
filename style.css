@@ -21,18 +21,19 @@ body{
 }
 .tab{
   border: none;
-  width: 25%;
-  float: left;
-  background-color: #f1f1f1;
+  width: 98%;
+  margin: auto;
+  width: 95%;
+
   overflow: hidden;
 
 
 }
 .tab .tabs{
-  display: block;
-  margin:4px;
-  width: 100%;
-  text-align:left;
+  display: inline-block;
+  outline: none;
+  width: 32.8%;
+  text-align:center;
   padding: 15px 10px;
   border: none;
   outline: none;
@@ -44,17 +45,19 @@ body{
 
 }
 .tab-content-box{
-  float: right;
-  width: 73%;
-  padding: 15px;
+
+  width: 98%;
+  padding: 15px 15px 0 15px;
+  margin: auto;
+  text-align: center;
+ 
+
 
 }
 .tabcontent {
-    background-color: white;
-    padding: 15px 18px;
+   padding: 100px;
+    background-color: white;  
     display: none;
-    min-height: 20vh;
-    height: 100%;
     animation: fadeEffect 1s;
         /*Fading effect takes 1 secound*/
 }
@@ -68,14 +71,14 @@ body{
   }
 }
 .tabcontent h2{
-  color: #777777aa;
+  color: #ffffff;
  
 }
 .tabcontent.show{
   display: block;
 }
 .tabcontent p{
-  color: tomato;
+  color: rgb(253, 253, 253);
   margin: 10px  0;
 
 }
