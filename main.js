@@ -5,7 +5,3 @@ const close = document.querySelector(".close-nav");
 icon_bar.addEventListener("click", (e) => {
   nav.classList.toggle("openNav");
 });
-close.addEventListener("click", () => {
-  nav.style.display = "none";
-  nav.style.width = "0";
-});
