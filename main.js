@@ -1,48 +1,18 @@
-// const tab = document.querySelector(".tab");
-// const content = document.querySelectorAll(".tabcontent");
+const input = document.querySelector("input");
+const menu = document.querySelector("#menu");
+const item = document.querySelector("li");
+Array.from(menu.children).forEach((items) => {
+  // console.log(items);
+  input.addEventListener("input", (e) => {
+    // console.log(e.target.value.toLowerCase());
+    const searchValue = e.target.value.toLowerCase();
+    const itemText = items.textContent.toLowerCase();
 
-// Array.from(tab.children).forEach((item,index) => {
-//   console.log(item[index]);
-//   item.addEventListener("click", (e) => {
-//     // console.log(item);
-//     const tabId = item.getAttribute("data-tab");
-//     const tabColor = item.getAttribute("data-color");
-
-//     // console.log(tabColor);
-//     Array.from(tab.children).forEach((tabs, index) => {
-//       tabs.classList.remove("active");
-//     });
-//     content.forEach((contentTb) => {
-//       contentTb.classList.remove("show");
-//       contentTb.style.backgroundColor = tabColor;
-//     });
-//     item.classList.add("active");
-//     document.getElementById(tabId).classList.add("show");
-//   });
-//   document.getElementById("default").click();
-// });
-
-const tabButtons = document.querySelectorAll(".tabs");
-const tabContent = document.querySelectorAll(".tabcontent");
-
-tabButtons.forEach((button) => {
-  button.addEventListener("mouseover", () => {
-    const tabId = button.getAttribute("data-tab");
-    const tabColor = button.getAttribute("data-color");
-
-    tabButtons.forEach((btn) => {
-      btn.classList.remove("active");
-      btn.style.backgroundColor = ""; // Reset background color of all buttons
-    });
-    tabContent.forEach((content) => {
-      content.classList.remove("show");
-      content.style.backgroundColor = tabColor;
-    });
-
-    button.classList.add("active");
-    button.style.backgroundColor = tabColor; // Set background color of clicked button
-    document.getElementById(tabId).classList.add("show");
+    // console.log(itemText);
+    if (itemText.indexOf(searchValue) > -1) {
+      items.style.display = "";
+    } else {
+      items.style.display = "none";
+    }
   });
 });
-
-document.querySelector("#default").click();
