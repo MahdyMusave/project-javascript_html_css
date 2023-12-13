@@ -15,4 +15,5 @@ Array.from(tab.children).forEach((item) => {
     item.classList.add("active");
     document.getElementById(tabId).classList.add("show");
   });
+  document.getElementById("default").click();
 });
