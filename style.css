@@ -15,58 +15,56 @@ body{
 
 .content-panel{
   border: none;
-  width:77%;
+  width:95%;
   margin-right: 20px;
-  float: left;
+  float: right;
   box-shadow: 2px 2px 10px 2px rgba(210, 207, 207, 0.2);
   padding: 15px;
 
 }
 .sidebar {
-  border: none;
-  box-shadow: 2px 2px 10px 2px rgba(198, 197, 197, 0.9);
-  float: left;
-  background-color: #333;
-  display: flex;
   position: relative;
-  padding: 100px 0;
-  transition: all 0.90s ease;
-  /* position: absolute; */
-  width: 0;
-  height: 100vh;
-  /* left: -100%; */
-  /* top: 0; */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+  width: 10%;
+  
 }
 
 .sidebar a {
-
+  position: absolute;
+  left: -73px;
   display: block;
   color: #c2bebe;
   text-align: left;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  width: 100px;
+  transition: 0.90s ease;
+}
+.sidebar a:hover{
+  left: 0;
+  transition: 0.90s ease;
+}
+.sidebar-content .sidebar #home{
+  top: 70px;
+  background-color: rebeccapurple;
+} 
+.sidebar-content .sidebar #search {
+  top: 130px;
+  background-color: rebeccapurple;
+}
+.sidebar-content .sidebar #email {
+  top: 190px;
+  background-color: rebeccapurple;
+}
+.sidebar-content .sidebar #login {
+  top: 250px;
+  background-color: rebeccapurple;
 }
 
 /* Change the color of links on hover */
 .sidebar a:hover {
 
   color: rgb(255, 255, 255);
-}
-
-/* Add an active class to highlight the current page */
-.sidebar a.active {
-
-  color: white;
-}
-
-/* Hide the link that should open and close the sidebar on small screens */
-.sidebar .icon {
-  display: none;
 }
 
 .sidebar i {
