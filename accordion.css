@@ -1,0 +1,27 @@
+.icon_bar {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+}
+.icon_bar > div{
+  border: none;
+  height: 5px;
+  width: 35px;
+  border-radius: 20%;
+  background-color: black;
+  margin: 4px 0;
+}
+.change .box1 {
+  background-color: tomato !important;
+  transform: translate(0px,0px) rotate(-45deg);
+  transition: all 0.2s ease-in-out;
+}
+.change >.box2 {
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+.change>.box3 {
+  background-color: tomato !important;
+  transform: translate(0,-9px) rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
