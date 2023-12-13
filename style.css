@@ -33,10 +33,12 @@ body{
 .navigation a.active {
   background-color: #04AA6D;
   color: white;
-  float: right;
 }
 
 /* Hide the link that should open and close the navigation on small screens */
 .navigation .icon {
   display: none;
+}
+.navigation i{
+  margin-right: 5px;
 }
