@@ -26,7 +26,7 @@ const tabButtons = document.querySelectorAll(".tabs");
 const tabContent = document.querySelectorAll(".tabcontent");
 
 tabButtons.forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("mouseover", () => {
     const tabId = button.getAttribute("data-tab");
     const tabColor = button.getAttribute("data-color");
 
