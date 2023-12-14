@@ -1,9 +1,10 @@
 const navbar = document.querySelector("#myNav");
-const icon_bars = document.querySelector(".navbar-icon");
-icon_bars.addEventListener("click", () => {
-  if (navbar.className === "nav") {
-    navbar.classList += " responsive";
+
+window.addEventListener("scroll", (e) => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 80) {
+    // console.log(document);
+    navbar.style.top = "0";
   } else {
-    navbar.classList = "nav";
+    navbar.style.top = "-80px";
   }
 });
