@@ -9,28 +9,66 @@ body {
 
 }
 
-.scrollmenu {
+.nav {
   background-color: #333;
   white-space: nowrap;
-  height: 400px;
-  width: 30%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
 }
 
-.scrollmenu a {
-  display: block;
+.nav a {
+  display: inline-block;
   color: white;
   text-align: left;
   padding: 14px;
   text-decoration: none;
-  width: 100%;
+  width: 8%;
   margin: 0;
 
 }
 
-.scrollmenu a.active {
+.nav a.active {
   background-color: rgb(104, 170, 104);
 }
 
-.scrollmenu a:hover:not(.active) {
+.nav a:hover:not(.active) {
   background-color: #5c5959;
+}
+.navbar-icon{
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-right: 20px;
+  padding:5px 10px;
+  display: none;
+}
+@media screen and (max-width:700px) {
+  .nav a:not(:first-child){display: none;
+  }
+    .nav a:first-child{
+      width: 30%;
+    }
+   .navbar-icon{
+      display: block;
+      
+    }
+}
+@media screen and (max-width:700px){
+  .nav.responsive{
+    position: relative;
+
+  }
+  .nav.responsive .navbar-icon{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
+  .nav.responsive a{
+    display: block;
+    width: 100%;
+
+  }
 }
