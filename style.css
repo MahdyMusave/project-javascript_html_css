@@ -27,7 +27,10 @@ body {
   text-decoration: none;
   width: 8%;
   margin: 0;
-
+  transition: all 2s ease;
+}
+.nav a:hover:not(.active){
+  border-bottom: 3px solid red
 }
 
 .nav a.active {
