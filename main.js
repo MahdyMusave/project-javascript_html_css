@@ -1,6 +1,9 @@
 const navbar = document.querySelector("#myNav");
-if (navbar.className === "nav") {
-  navbar.classList +=" responsive";
-} else {
-  navbar.classList = "nav";
-}
+const icon_bars = document.querySelector(".navbar-icon");
+icon_bars.addEventListener("click", () => {
+  if (navbar.className === "nav") {
+    navbar.classList += " responsive";
+  } else {
+    navbar.classList = "nav";
+  }
+});
