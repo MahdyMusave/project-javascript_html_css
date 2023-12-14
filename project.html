@@ -1,24 +1,31 @@
-< !DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>navigation</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./style.css" rel="stylesheet" />
-    < !-- Add icon library -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
-    <div class="scrollmenu">
+    <div class="nav" id="myNav">
       <a href="#home" class="active">Home</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
       <a href="#support">Support</a>
+      <div class="navbar-icon">
+        <i class="fa fa-bars"></i>
+      </div>
     </div>
+    <div style="padding-left: 16px">
+      <h2>Responsive Bottom Navbar Example</h2>
+      <p>Resize the browser window to see how it works.</p>
+    </div>
+
     <script src="./main.js"></script>
   </body>
 </html>
