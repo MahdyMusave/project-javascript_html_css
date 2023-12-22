@@ -7,8 +7,10 @@ window.addEventListener("scroll", (e) => {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    nav.style.display = "none";
+    nav.style.padding = "10px";
+    nav.style.fontSize = "21px";
   } else {
-    nav.style.display = "block";
+    nav.style.padding = "100px";
+    nav.style.fontSize = "30px";
   }
 });
