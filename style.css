@@ -60,3 +60,16 @@ body {
   padding:5px 10px;
   display: none;
 }
+.container{
+  width: 98%;
+  margin: 15px auto;
+}
+.container p{
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  color: #777;
+  white-space: 2px;
+  letter-spacing: 2px;
+
+}
