@@ -10,7 +10,8 @@ body {
 }
 
 .nav {
-  background-color: #333;
+  background-image: linear-gradient(to left bottom,red,blue,orange);
+  height: 300px;
   white-space: nowrap;
   position: sticky;
   top: 0;
@@ -20,7 +21,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+
 
 }
 
@@ -32,13 +33,14 @@ body {
 }
 
 .nav a {
-  display: inline-block;
+
   color: white;
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  width: 20%;
+  background-color: #555;
   margin: 0;
+  height: 50px;
   transition: all 2s ease;
 }
 .nav a:hover:not(.active){
